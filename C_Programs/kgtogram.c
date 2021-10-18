@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
 {
-float gram,kg;
-printf("\n enter the weight in gram");
+int gram,kilograms;
+printf("\n enter the weight in grams");
 scanf("%f",&gram);
-kg=gram/1000;
-printf("the weight in kg is=%2.3f ",kg);
+kilograms=grams/1000;
+  grams=grams%1000;
+printf("%d kg %d gm ",kilograms,grams);
 return 0;
 }
 

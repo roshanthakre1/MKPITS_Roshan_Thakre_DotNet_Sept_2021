@@ -1,4 +1,4 @@
-ogram to find the value of nCr using function
+program to find the value of nCr using function
 #include <stdio.h>
 
 int fact(int);

@@ -1,27 +1,26 @@
-/*find a factorial of n number*/
-/* Declaration prototype */
-int Fact(int);
-/* global variable declaration */
-int main()
-{
- int n,r,factorial;
- printf("Enter the number");
- scanf("%d",&n);
- factorial=Fact(n);
- printf("Enter the number");
- scanf("%d",&r);
- printf("The factorial of number =%d",factorial);
+ogram to find the value of nCr using function
+#include <stdio.h>
 
-   return 0;
-   }
+int fact(int);
 
-int Fact(int a)
+void main()
 {
-int i,f=1;
-for(i=a;i>=1;i--)
-{
-f=f*i;
-}
-return f;
+	int n,r,ncr;
+ 
+  	printf("Enter a number n\n");
+  	scanf("%d",&n);
+ 	printf("Enter a number r\n");
+  	scanf("%d",&r);
+  	ncr=fact(n)/(fact(r)*fact(n-r));
+    printf("Value of %dC%d = %d\n",n,r,ncr);
 }
 
+int fact(int n)
+{
+    int i,f=1;
+    for(i=1;i<=n;i++)
+    {
+        f=f*i;
+    }
+    return f;
+}

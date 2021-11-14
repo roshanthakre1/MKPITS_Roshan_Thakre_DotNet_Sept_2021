@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const employee={
+    id:10001,
+    firstname:"bill",
+    lastname:"Clariot",
+    salary:35000,
+    fullname:function()
+{
+    return this.firstname + " " + this.lastname;
+}
+};
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "Employee name is " +employee.fullname();
+</script>
+
+</body>
+</html>
